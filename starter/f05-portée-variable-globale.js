@@ -25,6 +25,19 @@ Une variable globale est accessible de partout
 // 3°) Appeler affiche2
 // 4°) Expliquer ce qui se passe
 
+/*
+function affiche1() {
+    const nbre1 = 2;
+}
+
+function affiche2() {
+    const nbre2 = 3;
+    console.log("Dans affiche2 : nbre2 = "+nbre2);
+//  console.log("Dans affiche2 : nbre1 = "+nbre1) //La variable nbre1 ne peut pas être trouvée car elle est stockée localement dans une autre foncion.
+}
+affiche2();
+*/
+
 // EXERCICE 2 : Variable globale
 // (on sort la variable nbre1 de la fonction affiche1)
 // 1°) Initialiser une variable nbre1 à la valeur 2
@@ -36,6 +49,22 @@ Une variable globale est accessible de partout
 //    - donne l'ordre d'afficher dans la console "Dans affiche2 : nbre1 =  "
 // 4°) Appeler affiche1 et affiche2
 // 5°) Expliquer ce qui se passe
+
+/*
+const nbre1 = 2;
+function affiche1() {
+    console.log("Dans affiche1 : nbre1 ="+nbre1);
+}
+
+function affiche2() {
+    const nbre2 = 3;
+    console.log("Dans affiche2 : nbre2 = "+nbre2);
+    console.log("Dans affiche2 : nbre1 = "+nbre1);
+}
+affiche1();
+affiche2();
+//Cette fois-ci, la variable nbre1 était globale, et donc accessible par affiche1 et affiche2. En revanche, nbre2 reste une variable locale.
+*/
 
 // EXERCICE 3 : Variable globale - variante
 // (on déclare la variable nbre1 hors de la fonction affiche1 et on l'affecte à l'intérieur de la fonction affiche1)
@@ -49,6 +78,22 @@ Une variable globale est accessible de partout
 //    - donne l'ordre d'afficher dans la console "Dans affiche2 : nbre1 =  "
 // 4°) Appeler affiche1 et affiche2
 // 5°) Expliquer ce qui se passe
+
+
+let nbre1;
+function affiche1() {
+    nbre1 = 2;
+    console.log("Dans affiche1 : nbre1 ="+nbre1);
+}
+
+function affiche2() {
+    const nbre2 = 3;
+    console.log("Dans affiche2 : nbre2 = "+nbre2);
+    console.log("Dans affiche2 : nbre1 = "+nbre1);
+}
+affiche1();
+affiche2();
+//nbre1 a été initialisé en variable globale, mais sa valeur a été définie uniquement dans affiche1.
 
 /*
 RESUME :
