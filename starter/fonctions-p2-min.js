@@ -20,11 +20,15 @@ N.B. Faites deux versions :
 
 // Version avec une arrow function
 
+calcMinArrow = (nbr1,nbr2) => Math.min(nbr1,nbr2);
+
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
 
+console.log(calcMinArrow(2,3));
 
 // Version encore plus concise avec une arrow function
 const calcMinConcise = (a, b) => (a < b) ? a : b;
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
 
+console.log(calcMinConcise(2,3));

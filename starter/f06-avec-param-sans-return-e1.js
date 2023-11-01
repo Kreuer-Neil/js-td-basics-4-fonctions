@@ -10,12 +10,22 @@
 1. a) Déclarez une fonction appelée double3 qui affiche dans la console 'Le double de 3 est  '.
    b) Appelez cette fonction.
 
+
 // Imaginons à présent qu'on a besoin de calculer le double d'autres nombres 
 // On a besoin de déclarer une fonction pour calculer le double de 10
 // et puis de déclarer une AUTRE fonction pour calculer le double de 24
 // et puis de déclarer une AUTRE fonction pour calculer le double de 128
 // etc. et ainsi de suite à chaque fois qu'on veut calculer le double d'un nouveau nombre 
 */
+
+/*
+function double3() {
+    const num = 3*2;
+    console.log("Le double de 3 est "+num);
+}
+
+double3();
+
 
 /*
 // Si on regarde toutes ces fonctions, elles ont toutes un canevas commun,
@@ -36,3 +46,13 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+
+function double(num) {
+    const i = num *2;
+    console.log(`Le double de ${num} est `+i);
+}
+
+double(3);
+double(10);
+double(24);
+double(128);

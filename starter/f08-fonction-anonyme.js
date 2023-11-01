@@ -6,6 +6,8 @@
 
 // 1°) Déclaration de fonction sous la forme d'une expression de fonction
 
+
+
 // a) sans paramètre ni return
 
 /* EXERCICE :
@@ -16,21 +18,31 @@
 
 // Expression de fonction sans paramètre ni return
 
+function direBonjour() {
+    console.log("Bonjour !");
+}
 
 // Appel de la fonction
 
-
+direBonjour();
 
 // b) sans paramètre mais avec return
+
+function eloh() {
+    console.log("Bonjour !");
+    return;
+}
 
 /* EXERCICE 2 :
 - Déclarez sous la forme d'une expression de fonction
   la fonction disBonjour qui retourne la chaîne "Bonjour !"
 - Utilisez-la pour afficher "Bonjour !" dans la console
 */
+function disBonjour() {
+    const salutations = "Bonjour !";
+}
 
-// Expression de fonction sans paramètre mais avec return
-;
+// Expression de fonction sans paramètre mais avec return;
 
 // Utilisation de la fonction pour afficher "Bonjour !" dans la console
 
@@ -46,6 +58,14 @@
 - Utilisez-la pour saluer Thomas dans la console
 */
 
+function salue(prenom) {
+    const message = "Bonjour "+prenom+" !";
+    return message;
+}
+
+console.log(salue("Thomas"));
+
 // Expression de fonction avec paramètre et return
 
 // Utilisation de la fonction pour saluer Thomas dans la console
+
