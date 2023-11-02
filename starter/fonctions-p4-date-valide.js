@@ -11,6 +11,9 @@ FONCTIONS - PRÉPA 4 : Date valide - version 2
 
 // Fonction pour vérifier si une année est bissextile
 
+function isBissextile (year) {
+    
+}
 
 // Fonction pour vérifier si une date est valide
 
